@@ -8,6 +8,7 @@ const FDA = $("#FDA")
 const FDB = $("#FDB")
 const Fee_A = $('#Fee_A')
 const Fee_B = $('#Fee_B')
+const Total_Profit = $("#Total")
 
 button.addEventListener("click", () => {
     const Don_Bay = marginPosition.value;
@@ -40,4 +41,5 @@ button.addEventListener("click", () => {
     console.log(parseFloat(Math.abs(Profit_A - Profit_B)).toFixed(1));
     console.log(parseFloat(Total_Fee));
     console.log("Total: ",Total.toFixed(3));
+    Total_Profit.innerText = `${Total.toFixed(3)}`;
 });

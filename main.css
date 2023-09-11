@@ -11,3 +11,10 @@
 input{
     padding: 2px 2px;
 }
+
+#Caculator{
+    margin: 5px 0;
+    display: block;
+    width: 100px;
+    height: 40px;
+}
