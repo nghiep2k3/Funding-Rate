@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Rate</title>
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/C3CpyPtocz_jypT6mEIuSEuQNy0_lSaA0fH05zuj079K38A1lY4XDdCC9N-2dVqGjc_X=w240-h480-rw">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="container">
+        <Marquee>
+        </Marquee>
+        <h1>Bybit: 0.055% - Okx: 0.05% - Binance: 0.04% - Bidget: 0.06%</h1>
+        <span style="margin-right: 81px;">Số tiền</span>
+        <input type="text" name="Cost" id="Cost" value="10">
+        <br>
+        <span style="margin-top: 10px; display: inline-block;">Funding Rate sàn A</span>
+        <input type="text" name="FDA" id="FDA" value="1.8">
+        <br>
+        <span style="margin-top: 10px; display: inline-block;">Funding Rate sàn B</span>
+        <input type="text" name="FDB" id="FDB" value="2.8">
+        <br>
+        <label style="margin-top: 15px; display: inline-block; margin-right: 28px;" for="Fee_A">Phí giao dịch A</label>
+        <select name="Fee_A" id="Fee_A">
+            <option value="0.04">Binance</option>
+            <option value="0.055">Bybit</option>
+            <option value="0.06">Bidget</option>
+            <option value="0.05">Okx</option>
+        </select>
+        <br>
+        <label style="margin-top: 15px; display: inline-block; margin-right: 28px;" for="Fee_B">Phí giao dịch B</label>
+        <select name="Fee_B" id="Fee_B">
+            <option value="0.05">Okx</option>
+            <option value="0.06">Bidget</option>
+            <option value="0.04">Binance</option>
+            <option value="0.055">Bybit</option>
+        </select>
+        <br>
+
+        <label style="margin-top: 15px; display: inline-block; margin-right: 67px;" for="marginPosition">Đòn bẩy:
+        </label>
+        <select name="marginPosition" id="marginPosition">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+        </select>
+        <button id="Caculator">Tính toán</button>
+        <script src="./JavaScript.js"></script>
+    </div>
+</body>
+
+</html>
