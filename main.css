@@ -11,6 +11,9 @@
 input{
     padding: 2px 2px;
 }
+#container{
+    margin: 0 5px;
+}
 
 #Caculator{
     margin: 5px 0;
