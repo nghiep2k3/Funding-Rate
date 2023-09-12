@@ -5,11 +5,17 @@
 }
 
 #marginPosition, #Fee_A, #Fee_B{
-    width: 165px; height: 30px; font-size: 15px;
+    width: 268px; height: 40px; font-size: 15px;
+    margin-bottom: 10px;
 }
 
 input{
-    padding: 2px 2px;
+    padding: 5px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 #container{
     margin: 0 10px;
@@ -20,4 +26,18 @@ input{
     display: block;
     width: 100px;
     height: 40px;
+}
+
+select{
+    padding: 5px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+span, label{
+    font-weight: bold;
+    font-size: 20px;
 }
