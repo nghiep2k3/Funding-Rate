@@ -26,6 +26,14 @@ input{
     display: block;
     width: 100px;
     height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );
+}
+h2{
+    width: 311px;
+    font-size: 17px;
 }
 
 select{
@@ -41,3 +49,18 @@ span, label{
     font-weight: bold;
     font-size: 20px;
 }
+
+.p_25{
+    font-size: 25px;
+}
+
+@media (max-width: 719px) {
+    input {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    select{
+        width: 100% !important;
+    }
+  }
