@@ -12,49 +12,71 @@
 
 <body>
     <div id="container">
-        <Marquee>
-        </Marquee>
-        <h1>Binance: 0.04% - Bidget: 0.06%</h1>
-        <h1>Bybit:0.055% - Okx: 0.05%</h1>
-        <span style="margin-right: 161px;">Số tiền</span>
-        <input type="text" name="Cost" id="Cost">
-        <br>
-        <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A</span>
-        <input type="text" name="FDA" id="FDA">
-        <br>
-        <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn B</span>
-        <input type="text" name="FDB" id="FDB">
-        <br>
-        <label style="margin-top: 15px; display: inline-block; margin-right: 107px;" for="Fee_A">Phí giao dịch A</label>
-        <select name="Fee_A" id="Fee_A">
-            <option value="0.04">Binance</option>
-            <option value="0.055">Bybit</option>
-            <option value="0.06">Bidget</option>
-            <option value="0.05">Okx</option>
-        </select>
-        <br>
-        <label style="margin-top: 15px; display: inline-block; margin-right: 107px;" for="Fee_B">Phí giao dịch B</label>
-        <select name="Fee_B" id="Fee_B">
-            <option value="0.05">Okx</option>
-            <option value="0.06">Bidget</option>
-            <option value="0.04">Binance</option>
-            <option value="0.055">Bybit</option>
-        </select>
-        <br>
+        <div>
+            <Marquee>
 
-        <label style="margin-top: 15px; display: inline-block; margin-right: 147px;" for="marginPosition">Đòn bẩy:
-        </label>
-        <select name="marginPosition" id="marginPosition">
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="30">30</option>
-        </select>
-        <button id="Caculator">Tính toán</button>
-        <p style="font-size: 20px; margin-top: 10px;">Total: <span id="Total"></span></p>
-        <script src="./JavaScript.js"></script>
+            </Marquee>
+            <h1>Binance: 0.02% & 0.04% - Bidget: 0.02% & 0.06% - DxDy: 0.02% & 0.05%</h1>
+            <h1>Bybit:0.02% & 0.055% - Okx: 0.02 & 0.05% - Gate: 0.015% - 0.05%</h1>
+            <span style="margin-right: 161px;">Số tiền</span>
+            <input type="text" name="Cost" id="Cost">
+            <br>
+            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A</span>
+            <input type="text" name="FDA" id="FDA">
+            <br>
+            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn B</span>
+            <input type="text" name="FDB" id="FDB">
+            <br>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 107px;" for="Fee_A">Phí giao dịch A</label>
+            <select name="Fee_A" id="Fee_A">
+                <option value="0.02">Binance Maker</option>
+                <option value="0.02">Bybit Maker</option>
+                <option value="0.02">Bidget Maker</option>
+                <option value="0.02">Okx Maker</option>
+                <option value="0.02">DxDy Maker</option>
+                <option value="0.015">Gate Maker</option>
+                <option>------------------------------</option>
+                <option value="0.04">Binance</option>
+                <option value="0.055">Bybit</option>
+                <option value="0.06">Bidget</option>
+                <option value="0.05">Okx</option>
+                <option value="0.05">DxDy</option>
+                <option value="0.05">Gate</option>
+    
+            </select>
+            <br>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 107px;" for="Fee_B">Phí giao dịch B</label>
+            <select name="Fee_B" id="Fee_B">
+                <option value="0.02">Bidget Maker</option>
+                <option value="0.02">Binance Maker</option>
+                <option value="0.02">Bybit Maker</option>
+                <option value="0.02">Okx Maker</option>
+                <option value="0.02">DxDy Maker</option>
+                <option value="0.015">Gate Maker</option>
+                <option>------------------------------</option>
+                <option value="0.04">Binance</option>
+                <option value="0.055">Bybit</option>
+                <option value="0.06">Bidget</option>
+                <option value="0.05">Okx</option>
+                <option value="0.05">DxDy</option>
+                <option value="0.05">Gate</option>
+            </select>
+            <br>
+    
+            <label style="margin-top: 15px; display: inline-block; margin-right: 147px;" for="marginPosition">Đòn bẩy:
+            </label>
+            <select name="marginPosition" id="marginPosition">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+            <button id="Caculator">Tính toán</button>
+            <p style="font-size: 20px; margin-top: 10px;">Total: <span id="Total"></span></p>
+        </div>
     </div>
+    <script src="./JavaScript.js"></script>
 </body>
 
 </html>
