@@ -15,7 +15,7 @@
         <div>
             <h1 style="text-align: center; margin-bottom: 10px;">Bảng tính Funding Rate</h1>
             <span style="margin-right: 189px;">Số tiền</span>
-            <input type="text" name="Cost" id="Cost" inputmode="numeric">
+            <input type="text" name="Cost" id="Cost" value="13" inputmode="numeric">
             <br>
             <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A
                 <button class="reduce_A"><span>-</span></button></span>
@@ -28,38 +28,40 @@
             <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_A">Phí giao dịch
                 A</label>
             <select name="Fee_A" id="Fee_A">
-                <option value="0.02">Binance Maker</option>
-                <option value="0.02">Bybit Maker</option>
-                <option value="0.02">Bidget Maker</option>
-                <option value="0.02">Okx Maker</option>
-                <option value="0.02">DxDy Maker</option>
-                <option value="0.015">Gate Maker</option>
+                <option data-index="0">Chọn sàn</option>
+                <option value="0.02" data-index="1">Bybit Maker</option>
+                <option value="0.02" data-index="2">Binance Maker</option>
+                <option value="0.02" data-index="3">Bidget Maker</option>
+                <option value="0.02" data-index="4">Okx Maker</option>
+                <option value="0.02" data-index="5">DxDy Maker</option>
+                <option value="0.015" data-index="6">Gate Maker</option>
                 <option>------------------------------</option>
-                <option value="0.04">Binance</option>
-                <option value="0.055">Bybit</option>
-                <option value="0.06">Bidget</option>
-                <option value="0.05">Okx</option>
-                <option value="0.05">DxDy</option>
-                <option value="0.05">Gate</option>
-
+                <option value="0.04" data-index="7">Binance</option>
+                <option value="0.055" data-index="8">Bybit</option>
+                <option value="0.06" data-index="9">Bidget</option>
+                <option value="0.05" data-index="10">Okx</option>
+                <option value="0.05" data-index="11">DxDy</option>
+                <option value="0.05" data-index="12">Gate</option>
             </select>
+
             <br>
             <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_B">Phí giao dịch
                 B</label>
             <select name="Fee_B" id="Fee_B">
-                <option value="0.02">Bidget Maker</option>
-                <option value="0.02">Binance Maker</option>
-                <option value="0.02">Bybit Maker</option>
-                <option value="0.02">Okx Maker</option>
-                <option value="0.02">DxDy Maker</option>
-                <option value="0.015">Gate Maker</option>
+                <option data-index="0">Chọn sàn</option>
+                <option value="0.02" data-index="1">Bybit Maker</option>
+                <option value="0.02" data-index="2">Binance Maker</option>
+                <option value="0.02" data-index="3">Bidget Maker</option>
+                <option value="0.02" data-index="4">Okx Maker</option>
+                <option value="0.02" data-index="5">DxDy Maker</option>
+                <option value="0.015" data-index="6">Gate Maker</option>
                 <option>------------------------------</option>
-                <option value="0.04">Binance</option>
-                <option value="0.055">Bybit</option>
-                <option value="0.06">Bidget</option>
-                <option value="0.05">Okx</option>
-                <option value="0.05">DxDy</option>
-                <option value="0.05">Gate</option>
+                <option value="0.04" data-index="7">Binance</option>
+                <option value="0.055" data-index="8">Bybit</option>
+                <option value="0.06" data-index="9">Bidget</option>
+                <option value="0.05" data-index="10">Okx</option>
+                <option value="0.05" data-index="11">DxDy</option>
+                <option value="0.05" data-index="12">Gate</option>
             </select>
             <br>
 
@@ -67,6 +69,7 @@
             </label>
             <select name="marginPosition" id="marginPosition">
                 <option value="10">10</option>
+                <option value="8">8</option>
                 <option value="15">15</option>
                 <option value="20">20</option>
                 <option value="25">25</option>
@@ -76,7 +79,8 @@
                 <button id="Caculator">Tính toán</button>
                 <button id="Clear">Xóa</button>
             </div>
-            <p style="font-size: 20px; margin-top: 10px;"><b style="color: red; font-size: 40px;">Total:</b> <span id="Total"></span></p>
+            <p style="font-size: 20px; margin-top: 10px;"><b style="color: red; font-size: 40px;">Total:</b> <span
+                    id="Total"></span></p>
             <p class="p_25">Binance: 0.02% & 0.04%</p>
             <p class="p_25">Bidget: 0.02% & 0.06%</p>
             <p class="p_25">DxDy: 0.02% & 0.05%</p>

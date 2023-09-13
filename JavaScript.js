@@ -24,6 +24,7 @@ Reduce_A.addEventListener("click", () => {
 });
 
 Reduce_B.addEventListener("click", () => {
+  Dem += 1;
   if (Dem >= 2) {
     return;
   }
@@ -38,6 +39,26 @@ ClearButton.addEventListener('click', function() {
     inputElement.value = '';
   });
 });
+// chọn sàn bắt được data-index
+var select = Fee_A;
+
+select.addEventListener("change",  () => {
+  var selectedOption = select.options[select.selectedIndex];
+
+  var dataIndex1 = selectedOption.getAttribute("data-index");
+  var Choose_Ecommerce_Level1 = dataIndex1
+  console.log("data-index1: " + dataIndex1);
+});
+
+var select2 = Fee_B;
+
+select2.addEventListener("change",  () => {
+  var selectedOption = select.options[select.selectedIndex];
+
+  var dataIndex2 = selectedOption.getAttribute("data-index");
+  var Choose_Ecommerce_Level2 = dataIndex2
+  console.log("data-index2: " + dataIndex2);
+});
 
 button.addEventListener("click", () => {
   const Don_Bay = marginPosition.value;
@@ -48,6 +69,7 @@ button.addEventListener("click", () => {
   const FDB_Percent = (FDB.value / 100).toFixed(8);
   console.log("FDA_Percent: ", FDA_Percent);
   console.log("FDB_Percent: ", FDB_Percent);
+
   // Lợi nhuận mỗi sàn
   const Profit_A = parseFloat((Cost_Margin * FDA_Percent).toFixed(8));
   const Profit_B = parseFloat((Cost_Margin * FDB_Percent).toFixed(8));
@@ -57,15 +79,44 @@ button.addEventListener("click", () => {
   console.log("Loi nhuan san B: ", Profit_B.toFixed(8));
 
   // Phí sàn
-  const Fee_A_Martket = Cost_Margin * (Fee_A.value / 100) * 2;
-  const Fee_B_Martket = Cost_Margin * (Fee_B.value / 100) * 2;
+  //Phí mở
+  const Fee_A_Martket_Open = (Cost_Margin * (Fee_A.value / 100)).toFixed(8);
+  const Fee_B_Martket_Open = (Cost_Margin * (Fee_B.value / 100)).toFixed(8);
+  
+  
 
-  console.log("Phi san A: ", Fee_A_Martket);
-  console.log("Phi san B: ", Fee_B_Martket);
+  // switch (name) {
+  //   case "red":
+  //     console.log("Màu đỏ");
+  //     break;
 
-  const Total_Fee = parseFloat(Fee_A_Martket + Fee_B_Martket).toFixed(5);
+  //   case "blue":
+  //     console.log("Màu xanh");
+  //     break;
 
-  console.log(parseFloat(Fee_A_Martket + Fee_B_Martket).toFixed(5));
+  //   case "green":
+  //     console.log("Màu xanh lá cây");
+  //     break;
+
+  //   default:
+  //     console.log("Không xác định màu");
+  // }
+
+
+  // In ra giá trị name
+  console.log(1111, name); // string
+  //Phí đóng
+  const Fee_A_Martket_Close = (Cost_Margin * 2).toFixed(8);
+  const Fee_B_Martket_Close = (Cost_Margin * 2).toFixed(8);
+
+  console.log("Phi san A mo cua: ", Fee_A_Martket_Open);
+  console.log("Phi san B mo cua: ", Fee_B_Martket_Open);
+  console.log("Phi san A dong cua: ", Fee_A_Martket_Close);
+  console.log("Phi san B dong cua: ", Fee_B_Martket_Close);
+
+  const Total_Fee = parseFloat(Fee_A_Martket_Open + Fee_A_Martket_Open).toFixed(5);
+
+  console.log(parseFloat(Fee_A_Martket_Open + Fee_A_Martket_Open).toFixed(5));
   console.log("Total_Fee: ", Total_Fee);
 
   //Đầu vào 2 số âm
