@@ -15,15 +15,18 @@
         <div>
             <h1 style="text-align: center; margin-bottom: 10px;">Bảng tính Funding Rate</h1>
             <span style="margin-right: 189px;">Số tiền</span>
-            <input type="text" name="Cost" id="Cost">
+            <input type="text" name="Cost" id="Cost" inputmode="numeric">
             <br>
-            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A</span>
-            <input type="text" name="FDA" id="FDA">
+            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A
+                <button class="reduce_A"><span>-</span></button></span>
+            <input inputmode="numeric" type="text" name="FDA" id="FDA">
             <br>
-            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn B</span>
-            <input type="text" name="FDB" id="FDB">
+            <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn B <button
+                    class="reduce_B"><span>-</span></button></span>
+            <input inputmode="numeric" type="text" name="FDB" id="FDB">
             <br>
-            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_A">Phí giao dịch A</label>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_A">Phí giao dịch
+                A</label>
             <select name="Fee_A" id="Fee_A">
                 <option value="0.02">Binance Maker</option>
                 <option value="0.02">Bybit Maker</option>
@@ -41,7 +44,8 @@
 
             </select>
             <br>
-            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_B">Phí giao dịch B</label>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_B">Phí giao dịch
+                B</label>
             <select name="Fee_B" id="Fee_B">
                 <option value="0.02">Bidget Maker</option>
                 <option value="0.02">Binance Maker</option>
@@ -68,7 +72,10 @@
                 <option value="25">25</option>
                 <option value="30">30</option>
             </select>
-            <button id="Caculator">Tính toán</button>
+            <div class="Button_Click">
+                <button id="Caculator">Tính toán</button>
+                <button id="Clear">Xóa</button>
+            </div>
             <p style="font-size: 20px; margin-top: 10px;"><b style="color: red; font-size: 40px;">Total:</b> <span id="Total"></span></p>
             <p class="p_25">Binance: 0.02% & 0.04%</p>
             <p class="p_25">Bidget: 0.02% & 0.06%</p>

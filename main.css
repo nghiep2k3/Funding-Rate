@@ -29,7 +29,7 @@ input{
     border: 2px solid black;
     border-radius: 10px;
     font-size: 15px;
-    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );
+    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9%);
 }
 h2{
     width: 311px;
@@ -42,7 +42,13 @@ select{
     font-size: 20px;
     margin-bottom: 10px;
     border: 2px solid black;
+}
+
+.reduce_A, .reduce_B{
+    line-height: 15px;
     border-radius: 10px;
+    border: 2px solid black;
+    width: 55px;
 }
 
 span, label{
@@ -53,8 +59,25 @@ span, label{
 .p_25{
     font-size: 25px;
 }
+#Clear{
+    margin: 5px 0;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: red;
+}
 
-@media (max-width: 719px) {
+.Button_Click{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
     input {
       width: 100%;
       margin-top: 5px;
