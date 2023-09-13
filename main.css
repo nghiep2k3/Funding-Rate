@@ -1,15 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#marginPosition, #Fee_A, #Fee_B{
-    width: 268px; height: 40px; font-size: 15px;
+#marginPosition,
+#Fee_A,
+#Fee_B {
+    width: 268px;
+    height: 40px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-input{
+input {
     padding: 5px;
     height: 40px;
     font-size: 20px;
@@ -17,11 +21,12 @@ input{
     border: 2px solid black;
     border-radius: 10px;
 }
-#container{
+
+#container {
     margin: 0 10px;
 }
 
-#Caculator{
+#Caculator {
     margin: 5px 0;
     display: block;
     width: 100px;
@@ -29,37 +34,42 @@ input{
     border: 2px solid black;
     border-radius: 10px;
     font-size: 15px;
-    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9%);
+    background-image: linear-gradient(91deg, rgba(72, 154, 78, 1) 5.2%, rgba(251, 206, 70, 1) 95.9%);
 }
-h2{
+
+h2 {
     width: 311px;
     font-size: 17px;
 }
 
-select{
+select {
     padding: 5px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 10px;
+    border-radius: 10px;
     border: 2px solid black;
 }
 
-.reduce_A, .reduce_B{
+.reduce_A,
+.reduce_B {
     line-height: 15px;
     border-radius: 10px;
     border: 2px solid black;
     width: 55px;
 }
 
-span, label{
+span,
+label {
     font-weight: bold;
     font-size: 20px;
 }
 
-.p_25{
+.p_25 {
     font-size: 25px;
 }
-#Clear{
+
+#Clear {
     margin: 5px 0;
     display: block;
     width: 100px;
@@ -70,20 +80,35 @@ span, label{
     background-color: red;
 }
 
-.Button_Click{
+.Button_Click {
     display: flex;
     justify-content: space-around;
     width: 100%;
     align-items: center;
 }
 
-@media (max-width: 600px) {
-    input {
-      width: 100%;
-      margin-top: 5px;
+
+
+@media (min-width: 600px) {
+    .reduce_B{
+        display: none;
+    }
+    .reduce_A{
+        display: none;
     }
 
-    select{
+    .Button_Click{
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    select {
         width: 100% !important;
     }
-  }
+}
