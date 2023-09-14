@@ -27,7 +27,7 @@ Reduce_A.addEventListener("click", () => {
 
 Reduce_B.addEventListener("click", () => {
   Dem += 1;
-  if (Dem >= 2) {
+  if (Dem >= 3) {
     return;
   }
   const currentValue2 = FDB.value;
