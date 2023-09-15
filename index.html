@@ -15,7 +15,7 @@
         <div>
             <h1 style="text-align: center; margin-bottom: 10px;">Bảng tính Funding Rate</h1>
             <span style="margin-right: 189px;">Số tiền</span>
-            <input type="text" name="Cost" id="Cost"  inputmode="numeric">
+            <input type="text" name="Cost" id="Cost" inputmode="numeric">
             <br>
             <span style="margin-top: 10px; display: inline-block; margin-right: 80px;">Funding Rate sàn A
                 <button class="reduce_A"><span>-</span></button></span>
@@ -25,7 +25,8 @@
                     class="reduce_B"><span>-</span></button></span>
             <input inputmode="numeric" type="text" name="FDB" id="FDB">
             <br>
-            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_A">Phí giao dịch A</label>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_A">Phí giao dịch
+                A</label>
             <select name="Fee_A" id="Fee_A">
                 <option data-index="0">Chọn sàn</option>
                 <option value="0.02" data-index="1">Bybit Limit</option>
@@ -36,7 +37,7 @@
                 <option value="0.015" data-index="6">Gate Limit</option>
                 <option>------------------------------</option>
                 <option value="0.04" data-index="7">Binance Market</option>
-                <option value="0.055"data-index="8">Bybit Market</option>
+                <option value="0.055" data-index="8">Bybit Market</option>
                 <option value="0.06" data-index="9">Bidget Market</option>
                 <option value="0.05" data-index="10">Okx Market</option>
                 <option value="0.05" data-index="11">DxDy Market</option>
@@ -44,7 +45,8 @@
             </select>
 
             <br>
-            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_B">Phí giao dịch B</label>
+            <label style="margin-top: 15px; display: inline-block; margin-right: 120px;" for="Fee_B">Phí giao dịch
+                B</label>
             <select name="Fee_B" id="Fee_B">
                 <option data-index="0">Chọn sàn</option>
                 <option value="0.02" data-index="1">Bybit Limit</option>
@@ -55,7 +57,7 @@
                 <option value="0.015" data-index="6">Gate Limit</option>
                 <option>------------------------------</option>
                 <option value="0.04" data-index="7">Binance Market</option>
-                <option value="0.055"data-index="8">Bybit Market</option>
+                <option value="0.055" data-index="8">Bybit Market</option>
                 <option value="0.06" data-index="9">Bidget Market</option>
                 <option value="0.05" data-index="10">Okx Market</option>
                 <option value="0.05" data-index="11">DxDy Market</option>
@@ -87,6 +89,12 @@
             <p class="p_25">Gate: 0.015% & 0.05%</p>
         </div>
     </div>
+    <script>// Ẩn thanh trình duyệt và chuyển sang chế độ toàn màn hình
+        document.documentElement.requestFullscreen();
+
+        // Thoát chế độ toàn màn hình
+        // document.exitFullscreen();
+    </script>
     <script src="./JavaScript.js"></script>
 </body>
 
