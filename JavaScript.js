@@ -1,6 +1,12 @@
-window.addEventListener('load', function() {
-  document.getElementById('container').classList.remove('hidden');
-});
+// Hàm để hiển thị container sau 5 giây
+function showContainer() {
+  const container = document.getElementById('container');
+  container.style.display = 'block';
+}
+
+// Đợi 5 giây và sau đó gọi hàm hiển thị container
+setTimeout(showContainer, 5000); // 5000 mili giây = 5 giây
+
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
