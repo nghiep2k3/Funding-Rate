@@ -87,6 +87,11 @@ label {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+  }
+
+
 
 
 @media (min-width: 600px) {

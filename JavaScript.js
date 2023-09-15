@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+  document.getElementById('container').classList.remove('hidden');
+});
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
